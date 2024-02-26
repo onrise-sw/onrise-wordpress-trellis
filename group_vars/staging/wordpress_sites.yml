@@ -4,7 +4,7 @@
 wordpress_sites:
   onrise.software:
     site_hosts:
-    - canonical: staging.onrise.software
+    - canonical: staging.onrise.dev
       # redirects:
       # - staging.onrise.software
     local_path: ../site
