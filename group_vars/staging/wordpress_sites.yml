@@ -1,23 +1,20 @@
-# Documentation: https://roots.io/trellis/docs/remote-server-setup/
-# `wordpress_sites` options: https://roots.io/trellis/docs/wordpress-sites
-# Define accompanying passwords/secrets in group_vars/staging/vault.yml
+# Created by trellis-cli v1.11.1
+# Documentation: https://roots.io/trellis/docs/wordpress-sites/
 
 wordpress_sites:
-  example.com:
+  onrise.software:
     site_hosts:
-      - canonical: staging.example.com
-        # redirects:
-        #   - otherdomain.com
-    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    repo: git@github.com:example/example.com.git # replace with your Git repo URL
-    repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
+    - canonical: staging.onrise.software
+      # redirects:
+      # - staging.onrise.software
+    local_path: ../site
     branch: master
+    repo: git@github.com:onrise-sw/onrise-wordpress-site.git
+    # repo_subtree_path: site
     multisite:
       enabled: false
     ssl:
       enabled: false
       provider: letsencrypt
     cache:
-      enabled: false
-    xmlrpc:
       enabled: false

@@ -1,24 +1,21 @@
+# Created by trellis-cli v1.11.1
 # Documentation: https://roots.io/trellis/docs/vault/
-vault_mysql_root_password: stagingpw
 
-# Documentation: https://roots.io/trellis/docs/security/
+vault_mysql_root_password: vsrGfHwhycwLPiuDW27MucWgboHc0VuU1x1civkoKi6FUkKKjmvc5M3TKVb7TK8g
 vault_users:
-  - name: "{{ admin_user }}"
-    password: example_password
-    salt: "generateme"
-
-# Variables to accompany `group_vars/staging/wordpress_sites.yml`
-# Note: the site name (`example.com`) must match up with the site name in the above file.
+- name: '{{ admin_user }}'
+  password: RUzu7rQs0mmBJR8z8kBONpC4oSyVJ6nmsNsggNL8ntjkRibIm21BagnuYlmg43gK
+  salt: hPzRRgPE6l3aI1pbTQWzO6D9iFaDMdfc7F0FUFQpDVVnzX2WQCO8Cm5Rvlxhba6t
 vault_wordpress_sites:
-  example.com:
+  onrise.software:
+    admin_password: wgj15PLgDv5oQhJkXeP74SHYBnF8yfcZNNlJU3UGz3YU7mza3lEpZkQ5N29t4Dic
     env:
-      db_password: example_dbpassword
-      # Generate your keys here: https://roots.io/salts.html
-      auth_key: "generateme"
-      secure_auth_key: "generateme"
-      logged_in_key: "generateme"
-      nonce_key: "generateme"
-      auth_salt: "generateme"
-      secure_auth_salt: "generateme"
-      logged_in_salt: "generateme"
-      nonce_salt: "generateme"
+      db_password: k7BQepkytJDUll2juuKqzSQ6oBmgoER4c1vuZGrOumAihDmj7y0Qj2Iq2nbaoQiX
+      auth_key: 1bQg9TyoCPk2LgFkwf7xJovupA8KDw2T1vB8V6OR5UJWNNGObCoYVDK0bqmlSGbW
+      secure_auth_key: phM6Kw6shgiBzurXoRZS1xb0C1cjyqI3b0XK3rrdutxCM9AHBtvKDQjgb4G7ICHl
+      logged_in_key: XUL2mUYrgy2jpdvbWHqAnFss8qgNh0yRbf6Iz3lmllvIRwjZTpcDhuZKJhcdtqy8
+      nonce_key: VSc9TUH1O9KB4fri8XIDXOJOAfxvAwKfsybx1YLwyihVfwnsFoFOqTPcKCQc7Tqd
+      auth_salt: wr7CrEHFwrUuKsZcgNGDOB1976HyYmgl6MG0YDoucgmnOjjVABh20fVBaLkI2bwr
+      secure_auth_salt: CsuVbcIADQs8kwaii6HkC2TDoAXpuAuubJLXrQR8x3jwySKIaX8dy4kMHjvAcpBm
+      logged_in_salt: gMhRpRn92MDyGPobXXa6STqliJG4dc0uxdtHA7ebhtE8to8HQTDberRHzVnmrOyU
+      nonce_salt: Y7slyXbtrAkKcAZo63qXBv1YhZvDKX6xcXfsh6VCBCVbJRYvUEfrdgubQgbCXwSY

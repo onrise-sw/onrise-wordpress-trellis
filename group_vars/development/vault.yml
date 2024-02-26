@@ -1,10 +1,17 @@
+# Created by trellis-cli v1.11.1
 # Documentation: https://roots.io/trellis/docs/vault/
-vault_mysql_root_password: devpw
 
-# Variables to accompany `group_vars/development/wordpress_sites.yml`
-# Note: the site name (`example.com`) must match up with the site name in the above file.
+vault_mysql_root_password: v4ClC52EzyZnC3m8vKDRy5a131mr145TJHUxhAd5mZ03OXCJPAFDQsc6H2jBMTAU
 vault_wordpress_sites:
-  example.com:
-    admin_password: admin
+  onrise.software:
+    admin_password: vbAdgSscce26ksAvozTTmPCw3cZexT34I7uTteFTNHRrKpCxapOnJ7MqbdlAYkq0
     env:
-      db_password: example_dbpassword
+      db_password: 35ygrPvw8eWVaawXT2UNV7p7Zs6RAB7nBV3ikpiL2hK9NzqLlS9TRhBBaph3a4pc
+      auth_key: PKRW8gFH5z07BFVI8S1jkpK1Of98Ag7V9H6zQLCBibhb5MVTiz81aRG5Y9EJowNs
+      secure_auth_key: EBIdf1cQekyhcl75JwRs2GAQNQrv0V72oprYK9aXc5dc5yV4TxceHci3d6maaryA
+      logged_in_key: JtsXau3m1mE9vwxdmvUlH46gLOjttzDJxHG4R8fAPdE8tzbNtMbCEdbcQWRmw1QY
+      nonce_key: BJiOiaJKj40ZhK9ieE986h9287JUXktiCgTLPn9Iqcv7BHOI2w8p0SCU6MNSSKKm
+      auth_salt: dsN7e5kLHDK3YyoxUS1JnDpWVI4b0ThQ8Xgj1O48zbXJUDqDiWDEqphF1RLudP5b
+      secure_auth_salt: cwZICC7SknoUu0NI2VzFhzM6o0fRpWtC8RH8nsFGJRnfXrSzrR4sL3l557yakaze
+      logged_in_salt: xzG0H4xkyi2pbUZHBve8mxi5sILhx5x0oH19MLKZoODJshxXsZgcfS4wpyagt9Jx
+      nonce_salt: t5GPcY1BofvedjThpnscdCYGYpVv67EcalfB81ONmjYIPYBub7bCbyn5B275M9Bj

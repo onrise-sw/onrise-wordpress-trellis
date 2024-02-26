@@ -1,21 +1,18 @@
-# Documentation: https://roots.io/trellis/docs/local-development-setup/
-# `wordpress_sites` options: https://roots.io/trellis/docs/wordpress-sites
-# Define accompanying passwords/secrets in group_vars/development/vault.yml
+# Created by trellis-cli v1.11.1
+# Documentation: https://roots.io/trellis/docs/wordpress-sites/
 
 wordpress_sites:
-  example.com:
+  onrise.software:
     site_hosts:
-      - canonical: example.test
-        redirects:
-          - www.example.test
-    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    admin_email: admin@example.test
+    - canonical: www.onrise.test
+      redirects:
+      - onrise.test
+    local_path: ../site
+    admin_email: admin@www.onrise.test
     multisite:
       enabled: false
     ssl:
       enabled: false
       provider: self-signed
     cache:
-      enabled: false
-    xmlrpc:
       enabled: false
