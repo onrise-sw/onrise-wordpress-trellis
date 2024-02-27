@@ -4,9 +4,9 @@
 wordpress_sites:
   onrise.software:
     site_hosts:
-    - canonical: www.onrise.software
+    - canonical: onrise.software
       redirects:
-      - onrise.software
+      - www.onrise.software
     local_path: ../site
     branch: onrise
     repo: git@github.com:onrise-sw/onrise-wordpress-site.git
